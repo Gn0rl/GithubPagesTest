@@ -1,3 +1,3 @@
-var audio = document.getElementsByClassName("RadioClass");
+var audio = document.getElementsById("Audi");
 
 audio.play();
