@@ -7,12 +7,17 @@
     <title>Радио Мысль</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body style="background-color: rgba(0,0,0,0);">
+<body allow="autoplay" style="background-color: rgba(0,0,0,0);">
     <img src="./Res/Logo.png" class="Image">
     <div class="RaidoContainer">
         <div>Слушать:</div>
-        <audio id="Audi" style="display: hidden;" class="RadioClass"><source class="RadioPlayer" src="http://s0.radioheart.ru:8000/WQTWETWETHFBDFV" type="audio/mpeg"></audio>
+        <audio autoplay muted id="Audi" style="display: hidden;" class="RadioClass"><source class="RadioPlayer" src="http://s0.radioheart.ru:8000/WQTWETWETHFBDFV" type="audio/mpeg"></audio>
+        <button id="Unmute">Unmute</button>
     </div>
-    <script>document.getElementById('Audi').play();</script>
+    <script>
+  Unmute.addEventListener('click', function() {
+    Audi.muted = !Audi.muted;
+  });
+    </script>
 </body>
 </html>
