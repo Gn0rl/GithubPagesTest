@@ -13,6 +13,7 @@ body{
     text-align: center;
 }
 .Image{
+    background-color: rgba(0,0,0,0);
     width: 75%;
 }
 .RadioPlayer {
@@ -21,6 +22,7 @@ body{
     margin-bottom: 300px;
 }
 .RadioClass {
+    background-color: rgba(0,0,0,0);
     color: black;
     height: 50px;
     width: 300px;
