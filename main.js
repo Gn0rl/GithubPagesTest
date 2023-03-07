@@ -1,3 +1,3 @@
 var audio = document.getElementsById("Audi");
-
-audio.play();
+var Audioo = new Audio("http://s0.radioheart.ru:8000/WQTWETWETHFBDFV")
+Audioo.play();
